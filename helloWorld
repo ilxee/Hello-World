@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace helloWorldIR
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a1 = "hello";
+            string a2 = "world";
+            int resultado1;
+            int resultado2;
+            int salto = 15;
+            if (a1 == "hello")
+            { resultado1 = 1; }
+            else
+            { resultado1 = 0; }
+            if (a2 == "world")
+            { resultado2 = 1; }
+            else
+            { resultado2 = 0; }
+            int mensaje = resultado1 + resultado2;
+            if (mensaje == 2)
+            {
+                for (int i = 1; i <= salto; i++)
+                {
+                    Console.Write("\n");
+                    if (i == 8)
+                    { Console.WriteLine("\n HELLO WORLD :D"); }
+                }
+            }
+            else
+            { Console.WriteLine("\n No hay Hello World :("); }
+            Console.ReadKey();
+        }
+    }
+}
